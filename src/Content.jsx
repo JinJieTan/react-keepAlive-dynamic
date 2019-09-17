@@ -1,20 +1,20 @@
 import React from 'react';
-import ContentItem from './ContentItem';
-
+import ContentOne from './ContentOne';
+import ContentTwo from './ContentTwo';
 
 export default class Content extends React.PureComponent {
   render() {
-    const { show, list } = this.props;
+    const { show, list1, list2 } = this.props;
     if (show === 'one') {
       return (
         <div className="wrap">
-          <ContentItem list={list}></ContentItem>
+          <ContentOne list={list1}></ContentOne>
         </div>
       );
     } else if (show === 'two') {
       return (
         <div className="wrap">
-          <ContentItem list={list}></ContentItem>
+          <ContentTwo list={list2}></ContentTwo>
         </div>
       );
     } else {

@@ -1,8 +1,13 @@
 import React from 'react';
 import Content from './Content';
 import './index.less';
-import { bindLifecycle } from 'react-component-keepalive';
 
+const list1 = [];
+const list2 = [];
+for (let i = 0; i < 1000; i++) {
+  list1[i] = i + 'one';
+  list2[i] = i + 'two';
+}
 class App extends React.PureComponent {
   state = {
     show: null
@@ -13,22 +18,8 @@ class App extends React.PureComponent {
   componentDidActivate() {
     console.log('componentDidActivate');
   }
+
   render() {
-    const { show } = this.state;
-    const list = [];
-    if (show === 'one') {
-      for (let i = 0; i < 1000; i++) {
-        list[i] = i + 'one';
-      }
-    } else if (show === 'two') {
-      for (let i = 0; i < 1000; i++) {
-        list[i] = i + 'two';
-      }
-    }else {
-      for (let i = 0; i < 1000; i++) {
-        list[i] ='null';
-      }
-    }
     return (
       <div>
         <div>
@@ -52,14 +43,13 @@ class App extends React.PureComponent {
           >
             show two
           </button>
-          <button onClick={()=>{}}>添加一条数据</button>
         </div>
         <div>
-          <Content show={this.state.show} list={list}></Content>
+          <Content show={this.state.show} list1={list1} list2={list2}></Content>
         </div>
       </div>
     );
   }
 }
 
-export default bindLifecycle(App);
+export default App;
