@@ -9,7 +9,6 @@
 > 使用步骤 
 
 ```
-$  yarn init 
 
 $  yarn 
 
@@ -28,6 +27,7 @@ react-component-keepalive 最低支持 React 16.3 版本，但是如果你使用
 
 ```bash
 npm install --save react-component-keepalive
+
 ```
 
 
