@@ -1,6 +1,6 @@
 import React from 'react';
 import AutoSizer from 'react-virtualized-auto-sizer';
-import { DynamicSizeList as List } from 'react-window';
+import { DynamicSizeList as List } from 'react-peter-window';
 import { Provider, KeepAlive } from 'react-component-keepalive';
 class Row extends React.PureComponent {
   render() {

@@ -35,9 +35,9 @@
     "react": "^16.8.6",
     "react-component-keepalive": "^1.0.2",
     "react-dom": "^16.8.6",
+    "react-peter-window": "^1.0.1",
     "react-router-dom": "^5.0.0",
-    "react-virtualized-auto-sizer": "^1.0.2",
-    "react-window": "^1.6.0-alpha.1"
+    "react-virtualized-auto-sizer": "^1.0.2"
   },
   "theme": {
     "brand-primary": "red",
